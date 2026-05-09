@@ -1,0 +1,66 @@
+site_name: Farmledge Docs
+site_url: https://farmledge-labs.github.io/docs
+repo_url: https://github.com/farmledge-labs/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+
+extra_css:
+  - stylesheets/extra.css
+
+plugins:
+  - search
+  - awesome-pages
+
+nav:
+  - Getting Started:
+    - Overview: getting-started/overview.md
+    - Quick Start: getting-started/quick-start.md
+    - Concepts: getting-started/concepts.md
+  - Token Standard:
+    - Specification: token-standard/specification.md
+    - Commodity Codes: token-standard/commodity-codes.md
+    - Grading Standards:
+      - Maize: token-standard/grading-standards/maize.md
+      - Sesame: token-standard/grading-standards/sesame.md
+      - Sorghum: token-standard/grading-standards/sorghum.md
+    - Examples: token-standard/examples.md
+  - Custodian Guide:
+    - Onboarding: custodian-guide/onboarding.md
+    - Deposit Process: custodian-guide/deposit-process.md
+    - Exit Process: custodian-guide/exit-process.md
+    - Fraud Prevention: custodian-guide/fraud-prevention.md
+    - FAQ: custodian-guide/faq.md
+  - Lender Guide:
+    - Integration: lender-guide/integration.md
+    - API Reference: lender-guide/api-reference.md
+    - Collateral Assessment: lender-guide/collateral-assessment.md
+    - Lock & Unlock: lender-guide/lock-unlock.md
+    - FAQ: lender-guide/faq.md
+  - Farmer Guide:
+    - How It Works: farmer-guide/how-it-works.md
+    - Your Certificate: farmer-guide/your-certificate.md
+    - Selling Your Tokens: farmer-guide/selling-your-tokens.md
+    - Financing: farmer-guide/financing.md
+  - Developers:
+    - Contract Addresses: developers/contract-addresses.md
+    - SDK Reference: developers/sdk-reference.md
+    - Events: developers/events.md
+    - Webhooks: developers/webhooks.md
+    - Changelog: developers/changelog.md
